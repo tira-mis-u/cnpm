@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>StudentDialog</class>
+ <widget class="QDialog" name="StudentDialog">
+  <property name="geometry">
+   <rect><x>0</x><y>0</y><width>540</width><height>580</height></rect>
+  </property>
+  <property name="windowTitle"><string>Thông Tin Sinh Viên</string></property>
+  <property name="styleSheet">
+   <string>
+    QDialog { background: #f8fafc; }
+    QLabel[class="field-label"] { font-weight: bold; color: #374151; font-size: 13px; }
+    QLineEdit, QComboBox, QDateEdit, QPlainTextEdit {
+        border: 1.5px solid #cbd5e1;
+        border-radius: 6px;
+        padding: 7px 10px;
+        font-size: 13px;
+        background: white;
+    }
+    QLineEdit:focus, QComboBox:focus, QDateEdit:focus, QPlainTextEdit:focus {
+        border-color: #3b82f6;
+        outline: none;
+    }
+   </string>
+  </property>
+
+  <layout class="QVBoxLayout" name="mainLayout">
+   <property name="spacing"><number>12</number></property>
+   <property name="leftMargin"><number>0</number></property>
+   <property name="topMargin"><number>0</number></property>
+   <property name="rightMargin"><number>0</number></property>
+   <property name="bottomMargin"><number>16</number></property>
+
+   <!-- Header -->
+   <item>
+    <widget class="QLabel" name="lblTitle">
+     <property name="text"><string>THÔNG TIN SINH VIÊN</string></property>
+     <property name="alignment"><set>Qt::AlignCenter</set></property>
+     <property name="styleSheet">
+      <string>
+       background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+           stop:0 #1e3a8a, stop:1 #2563eb);
+       color: white;
+       font-size: 16px;
+       font-weight: bold;
+       padding: 14px;
+       border-radius: 0px;
+       letter-spacing: 1px;
+      </string>
+     </property>
+     <property name="minimumHeight"><number>52</number></property>
+    </widget>
+   </item>
+
+   <!-- Ghi chú bắt buộc -->
+   <item>
+    <widget class="QLabel" name="lblRequired">
+     <property name="text"><string>  * Các trường có dấu * là bắt buộc</string></property>
+     <property name="styleSheet"><string>color:#ef4444; font-size:12px; padding-left:16px;</string></property>
+    </widget>
+   </item>
+
+   <!-- Form -->
+   <item>
+    <widget class="QWidget" name="formWidget">
+     <layout class="QFormLayout" name="formLayout">
+      <property name="horizontalSpacing"><number>12</number></property>
+      <property name="verticalSpacing"><number>10</number></property>
+      <property name="leftMargin"><number>20</number></property>
+      <property name="topMargin"><number>0</number></property>
+      <property name="rightMargin"><number>20</number></property>
+      <property name="bottomMargin"><number>0</number></property>
+      <property name="labelAlignment"><set>Qt::AlignRight|Qt::AlignVCenter</set></property>
+
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_id">
+        <property name="text"><string>Mã Sinh Viên *</string></property>
+        <property name="styleSheet"><string>font-weight:bold; color:#1e293b;</string></property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="lineStudentId">
+        <property name="placeholderText"><string>VD: SV001  (viết hoa tự động)</string></property>
+        <property name="maxLength"><number>20</number></property>
+       </widget>
+      </item>
+
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_name">
+        <property name="text"><string>Họ và Tên *</string></property>
+        <property name="styleSheet"><string>font-weight:bold; color:#1e293b;</string></property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="lineName">
+        <property name="placeholderText"><string>Nguyễn Văn A</string></property>
+        <property name="maxLength"><number>100</number></property>
+       </widget>
+      </item>
+
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_dob">
+        <property name="text"><string>Ngày Sinh</string></property>
+        <property name="styleSheet"><string>font-weight:bold; color:#1e293b;</string></property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QDateEdit" name="dateDOB">
+        <property name="displayFormat"><string>dd/MM/yyyy</string></property>
+        <property name="calendarPopup"><bool>true</bool></property>
+       </widget>
+      </item>
+
+      <item row="3" column="0">
+       <widget class="QLabel" name="label_gender">
+        <property name="text"><string>Giới Tính</string></property>
+        <property name="styleSheet"><string>font-weight:bold; color:#1e293b;</string></property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QComboBox" name="comboGender"/>
+      </item>
+
+      <item row="4" column="0">
+       <widget class="QLabel" name="label_class">
+        <property name="text"><string>Lớp Học *</string></property>
+        <property name="styleSheet"><string>font-weight:bold; color:#1e293b;</string></property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QComboBox" name="comboClass">
+        <property name="minimumHeight"><number>36</number></property>
+       </widget>
+      </item>
+
+      <item row="5" column="0">
+       <widget class="QLabel" name="label_email">
+        <property name="text"><string>Email</string></property>
+        <property name="styleSheet"><string>font-weight:bold; color:#1e293b;</string></property>
+       </widget>
+      </item>
+      <item row="5" column="1">
+       <widget class="QLineEdit" name="lineEmail">
+        <property name="placeholderText"><string>example@gmail.com</string></property>
+       </widget>
+      </item>
+
+      <item row="6" column="0">
+       <widget class="QLabel" name="label_phone">
+        <property name="text"><string>Điện Thoại</string></property>
+        <property name="styleSheet"><string>font-weight:bold; color:#1e293b;</string></property>
+       </widget>
+      </item>
+      <item row="6" column="1">
+       <widget class="QLineEdit" name="linePhone">
+        <property name="placeholderText"><string>0901234567</string></property>
+        <property name="maxLength"><number>15</number></property>
+       </widget>
+      </item>
+
+      <item row="7" column="0">
+       <widget class="QLabel" name="label_addr">
+        <property name="text"><string>Địa Chỉ</string></property>
+        <property name="styleSheet"><string>font-weight:bold; color:#1e293b;</string></property>
+       </widget>
+      </item>
+      <item row="7" column="1">
+       <widget class="QPlainTextEdit" name="textAddress">
+        <property name="placeholderText"><string>Số nhà, đường, phường/xã, quận/huyện, tỉnh/thành phố</string></property>
+        <property name="maximumHeight"><number>72</number></property>
+       </widget>
+      </item>
+
+     </layout>
+    </widget>
+   </item>
+
+   <!-- Buttons -->
+   <item>
+    <layout class="QHBoxLayout" name="hlButtons">
+     <property name="leftMargin"><number>20</number></property>
+     <property name="topMargin"><number>0</number></property>
+     <property name="rightMargin"><number>20</number></property>
+     <property name="bottomMargin"><number>0</number></property>
+     <item>
+      <spacer>
+       <property name="orientation"><enum>Qt::Horizontal</enum></property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnSave">
+       <property name="text"><string>💾  Lưu Thông Tin</string></property>
+       <property name="minimumHeight"><number>42</number></property>
+       <property name="minimumWidth"><number>150</number></property>
+       <property name="styleSheet">
+        <string>
+         QPushButton { background:#16a34a; color:white; padding:10px 28px;
+           border-radius:8px; font-weight:bold; font-size:14px; border:none; }
+         QPushButton:hover { background:#15803d; }
+         QPushButton:pressed { background:#166534; }
+         QPushButton:disabled { background:#94a3b8; }
+        </string>
+       </property>
+       <property name="default"><bool>true</bool></property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnCancel">
+       <property name="text"><string>Hủy</string></property>
+       <property name="minimumHeight"><number>42</number></property>
+       <property name="minimumWidth"><number>90</number></property>
+       <property name="styleSheet">
+        <string>
+         QPushButton { background:#94a3b8; color:white; padding:10px 20px;
+           border-radius:8px; font-size:14px; border:none; }
+         QPushButton:hover { background:#64748b; }
+        </string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+
+  </layout>
+ </widget>
+</ui>

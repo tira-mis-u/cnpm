@@ -1,0 +1,5 @@
+C:/Users/Admin/Downloads/StudentMS/build/CMakeFiles/StudentMS.dir
+C:/Users/Admin/Downloads/StudentMS/build/CMakeFiles/edit_cache.dir
+C:/Users/Admin/Downloads/StudentMS/build/CMakeFiles/rebuild_cache.dir
+C:/Users/Admin/Downloads/StudentMS/build/CMakeFiles/StudentMS_autogen_timestamp_deps.dir
+C:/Users/Admin/Downloads/StudentMS/build/CMakeFiles/StudentMS_autogen.dir
