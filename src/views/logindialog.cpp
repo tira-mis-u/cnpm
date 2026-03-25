@@ -25,6 +25,13 @@ LoginDialog::LoginDialog(QWidget* parent)
     connect(ui->lineUsername,&QLineEdit::returnPressed, this, [this]{ ui->linePassword->setFocus(); });
 
     ui->linePassword->setFocus();
+    
+    // Thay đổi logo trong LoginDialog thành logo_utt.png (phần khoanh đỏ)
+    QPixmap logo(":/logo_utt.png");
+    if (!logo.isNull()) {
+        ui->lblLogo->setPixmap(logo.scaled(180, 80, Qt::KeepAspectRatio, Qt::SmoothTransformation));
+        ui->lblLogo->setText(""); 
+    }
 }
 
 LoginDialog::~LoginDialog() { delete ui; }

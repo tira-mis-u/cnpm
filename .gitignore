@@ -1,1 +1,10 @@
-.cache
+.cache/
+compile_commands.json
+.clangd
+build/
+*.db
+.vscode/
+*.user
+bin/
+src/**/*.explain.md
+.vscode/

@@ -11,11 +11,11 @@ events:
   -
     kind: "find-v1"
     backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeMinGWFindMake.cmake:5 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeNinjaFindMake.cmake:5 (find_program)"
       - "CMakeLists.txt:2 (project)"
     mode: "program"
     variable: "CMAKE_MAKE_PROGRAM"
-    description: "Path to a program."
+    description: "Program used to build from build.ninja files."
     settings:
       SearchFramework: "NEVER"
       SearchAppBundle: "NEVER"
@@ -25,11 +25,10 @@ events:
       CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
       CMAKE_FIND_USE_INSTALL_PREFIX: true
     names:
-      - "mingw32-make.exe"
+      - "ninja-build"
+      - "ninja"
+      - "samu"
     candidate_directories:
-      - "C:/Qt/6.5.0/mingw_64/bin/"
-      - "C:/Qt/6.5.0/mingw_64/sbin/"
-      - "C:/Qt/6.5.0/mingw_64/"
       - "C:/msys64/mingw64/bin/"
       - "C:/Program Files/Common Files/Oracle/Java/javapath/"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/"
@@ -56,22 +55,13 @@ events:
       - "C:/Users/Admin/AppData/Local/Programs/Microsoft VS Code/bin/"
       - "C:/Users/Admin/AppData/Roaming/npm/"
       - "C:/Users/Admin/AppData/Local/Programs/Antigravity/bin/"
-      - "/REGISTRY-NOTFOUND/bin/"
-      - "c:/MinGW/bin/"
-      - "/MinGW/bin/"
-      - "/REGISTRY-NOTFOUND/MinGW/bin/"
     searched_directories:
-      - "C:/Qt/6.5.0/mingw_64/bin/mingw32-make.exe.com"
-      - "C:/Qt/6.5.0/mingw_64/bin/mingw32-make.exe"
-      - "C:/Qt/6.5.0/mingw_64/sbin/mingw32-make.exe.com"
-      - "C:/Qt/6.5.0/mingw_64/sbin/mingw32-make.exe"
-      - "C:/Qt/6.5.0/mingw_64/mingw32-make.exe.com"
-      - "C:/Qt/6.5.0/mingw_64/mingw32-make.exe"
-      - "C:/msys64/mingw64/bin/mingw32-make.exe.com"
-    found: "C:/msys64/mingw64/bin/mingw32-make.exe"
+      - "C:/msys64/mingw64/bin/ninja-build.com"
+      - "C:/msys64/mingw64/bin/ninja-build.exe"
+      - "C:/msys64/mingw64/bin/ninja-build"
+      - "C:/msys64/mingw64/bin/ninja.com"
+    found: "C:/msys64/mingw64/bin/ninja.exe"
     search_context:
-      ENV{CMAKE_PREFIX_PATH}:
-        - "C:\\Qt\\6.5.0\\mingw_64"
       ENV{PATH}:
         - "C:\\msys64\\mingw64\\bin"
         - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
@@ -155,8 +145,6 @@ events:
       - "C:/msys64/mingw64/bin/c++.com"
     found: "C:/msys64/mingw64/bin/c++.exe"
     search_context:
-      ENV{CMAKE_PREFIX_PATH}:
-        - "C:\\Qt\\6.5.0\\mingw_64"
       ENV{PATH}:
         - "C:\\msys64\\mingw64\\bin"
         - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
@@ -211,8 +199,6 @@ events:
       - "C:/Program Files/CMake/share/cmake-4.3/Modules/"
     found: "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeCXXCompilerId.cpp.in"
     search_context:
-      ENV{CMAKE_PREFIX_PATH}:
-        - "C:\\Qt\\6.5.0\\mingw_64"
       ENV{PATH}:
         - "C:\\msys64\\mingw64\\bin"
         - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
@@ -313,8 +299,6 @@ events:
       - "C:/msys64/mingw64/bin/ar.com"
     found: "C:/msys64/mingw64/bin/ar.exe"
     search_context:
-      ENV{CMAKE_PREFIX_PATH}:
-        - "C:\\Qt\\6.5.0\\mingw_64"
       ENV{PATH}:
         - "C:\\msys64\\mingw64\\bin"
         - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
@@ -393,8 +377,6 @@ events:
       - "C:/msys64/mingw64/bin/ranlib.com"
     found: "C:/msys64/mingw64/bin/ranlib.exe"
     search_context:
-      ENV{CMAKE_PREFIX_PATH}:
-        - "C:\\Qt\\6.5.0\\mingw_64"
       ENV{PATH}:
         - "C:\\msys64\\mingw64\\bin"
         - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
@@ -473,8 +455,6 @@ events:
       - "C:/msys64/mingw64/bin/strip.com"
     found: "C:/msys64/mingw64/bin/strip.exe"
     search_context:
-      ENV{CMAKE_PREFIX_PATH}:
-        - "C:\\Qt\\6.5.0\\mingw_64"
       ENV{PATH}:
         - "C:\\msys64\\mingw64\\bin"
         - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
@@ -553,8 +533,6 @@ events:
       - "C:/msys64/mingw64/bin/ld.com"
     found: "C:/msys64/mingw64/bin/ld.exe"
     search_context:
-      ENV{CMAKE_PREFIX_PATH}:
-        - "C:\\Qt\\6.5.0\\mingw_64"
       ENV{PATH}:
         - "C:\\msys64\\mingw64\\bin"
         - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
@@ -633,8 +611,6 @@ events:
       - "C:/msys64/mingw64/bin/nm.com"
     found: "C:/msys64/mingw64/bin/nm.exe"
     search_context:
-      ENV{CMAKE_PREFIX_PATH}:
-        - "C:\\Qt\\6.5.0\\mingw_64"
       ENV{PATH}:
         - "C:\\msys64\\mingw64\\bin"
         - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
@@ -713,8 +689,6 @@ events:
       - "C:/msys64/mingw64/bin/objdump.com"
     found: "C:/msys64/mingw64/bin/objdump.exe"
     search_context:
-      ENV{CMAKE_PREFIX_PATH}:
-        - "C:\\Qt\\6.5.0\\mingw_64"
       ENV{PATH}:
         - "C:\\msys64\\mingw64\\bin"
         - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
@@ -793,8 +767,6 @@ events:
       - "C:/msys64/mingw64/bin/objcopy.com"
     found: "C:/msys64/mingw64/bin/objcopy.exe"
     search_context:
-      ENV{CMAKE_PREFIX_PATH}:
-        - "C:\\Qt\\6.5.0\\mingw_64"
       ENV{PATH}:
         - "C:\\msys64\\mingw64\\bin"
         - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
@@ -873,8 +845,6 @@ events:
       - "C:/msys64/mingw64/bin/readelf.com"
     found: "C:/msys64/mingw64/bin/readelf.exe"
     search_context:
-      ENV{CMAKE_PREFIX_PATH}:
-        - "C:\\Qt\\6.5.0\\mingw_64"
       ENV{PATH}:
         - "C:\\msys64\\mingw64\\bin"
         - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
@@ -953,8 +923,6 @@ events:
       - "C:/msys64/mingw64/bin/dlltool.com"
     found: "C:/msys64/mingw64/bin/dlltool.exe"
     search_context:
-      ENV{CMAKE_PREFIX_PATH}:
-        - "C:\\Qt\\6.5.0\\mingw_64"
       ENV{PATH}:
         - "C:\\msys64\\mingw64\\bin"
         - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
@@ -1033,8 +1001,6 @@ events:
       - "C:/msys64/mingw64/bin/addr2line.com"
     found: "C:/msys64/mingw64/bin/addr2line.exe"
     search_context:
-      ENV{CMAKE_PREFIX_PATH}:
-        - "C:\\Qt\\6.5.0\\mingw_64"
       ENV{PATH}:
         - "C:\\msys64\\mingw64\\bin"
         - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
@@ -1190,8 +1156,6 @@ events:
       - "C:/Users/Admin/AppData/Local/Programs/Antigravity/bin/tapi"
     found: false
     search_context:
-      ENV{CMAKE_PREFIX_PATH}:
-        - "C:\\Qt\\6.5.0\\mingw_64"
       ENV{PATH}:
         - "C:\\msys64\\mingw64\\bin"
         - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
@@ -1507,8 +1471,6 @@ events:
       - "C:/msys64/mingw64/bin/gcc-ar.com"
     found: "C:/msys64/mingw64/bin/gcc-ar.exe"
     search_context:
-      ENV{CMAKE_PREFIX_PATH}:
-        - "C:\\Qt\\6.5.0\\mingw_64"
       ENV{PATH}:
         - "C:\\msys64\\mingw64\\bin"
         - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
@@ -1824,8 +1786,6 @@ events:
       - "C:/msys64/mingw64/bin/gcc-ranlib.com"
     found: "C:/msys64/mingw64/bin/gcc-ranlib.exe"
     search_context:
-      ENV{CMAKE_PREFIX_PATH}:
-        - "C:\\Qt\\6.5.0\\mingw_64"
       ENV{PATH}:
         - "C:\\msys64\\mingw64\\bin"
         - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
@@ -1877,9 +1837,6 @@ events:
       - "windres"
       - "windres"
     candidate_directories:
-      - "C:/Qt/6.5.0/mingw_64/bin/"
-      - "C:/Qt/6.5.0/mingw_64/sbin/"
-      - "C:/Qt/6.5.0/mingw_64/"
       - "C:/msys64/mingw64/bin/"
       - "C:/Program Files/Common Files/Oracle/Java/javapath/"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/"
@@ -1915,24 +1872,13 @@ events:
       - "C:/Program Files/CMake/bin/"
       - "C:/Program Files/CMake/sbin/"
       - "C:/Program Files/CMake/"
-      - "C:/Program Files (x86)/StudentMS/bin/"
-      - "C:/Program Files (x86)/StudentMS/sbin/"
-      - "C:/Program Files (x86)/StudentMS/"
+      - "C:/Program Files (x86)/QuanLyHoSoSinhVien/bin/"
+      - "C:/Program Files (x86)/QuanLyHoSoSinhVien/sbin/"
+      - "C:/Program Files (x86)/QuanLyHoSoSinhVien/"
     searched_directories:
-      - "C:/Qt/6.5.0/mingw_64/bin/windres.com"
-      - "C:/Qt/6.5.0/mingw_64/bin/windres.exe"
-      - "C:/Qt/6.5.0/mingw_64/bin/windres"
-      - "C:/Qt/6.5.0/mingw_64/sbin/windres.com"
-      - "C:/Qt/6.5.0/mingw_64/sbin/windres.exe"
-      - "C:/Qt/6.5.0/mingw_64/sbin/windres"
-      - "C:/Qt/6.5.0/mingw_64/windres.com"
-      - "C:/Qt/6.5.0/mingw_64/windres.exe"
-      - "C:/Qt/6.5.0/mingw_64/windres"
       - "C:/msys64/mingw64/bin/windres.com"
     found: "C:/msys64/mingw64/bin/windres.exe"
     search_context:
-      ENV{CMAKE_PREFIX_PATH}:
-        - "C:\\Qt\\6.5.0\\mingw_64"
       ENV{PATH}:
         - "C:\\msys64\\mingw64\\bin"
         - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
@@ -1961,12 +1907,12 @@ events:
         - "C:\\Users\\Admin\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\Admin\\AppData\\Roaming\\npm"
         - "C:\\Users\\Admin\\AppData\\Local\\Programs\\Antigravity\\bin"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/StudentMS"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/QuanLyHoSoSinhVien"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
         - "C:/Program Files (x86)"
         - "C:/Program Files/CMake"
-        - "C:/Program Files (x86)/StudentMS"
+        - "C:/Program Files (x86)/QuanLyHoSoSinhVien"
   -
     kind: "try_compile-v1"
     backtrace:
@@ -1976,8 +1922,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/Users/Admin/Downloads/StudentMS/build/CMakeFiles/CMakeScratch/TryCompile-mcylbu"
-      binary: "C:/Users/Admin/Downloads/StudentMS/build/CMakeFiles/CMakeScratch/TryCompile-mcylbu"
+      source: "C:/Users/Admin/Downloads/StudentMS/build/CMakeFiles/CMakeScratch/TryCompile-xsxf6f"
+      binary: "C:/Users/Admin/Downloads/StudentMS/build/CMakeFiles/CMakeScratch/TryCompile-xsxf6f"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -1988,13 +1934,10 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/Admin/Downloads/StudentMS/build/CMakeFiles/CMakeScratch/TryCompile-mcylbu'
+        Change Dir: 'C:/Users/Admin/Downloads/StudentMS/build/CMakeFiles/CMakeScratch/TryCompile-xsxf6f'
         
-        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/msys64/mingw64/bin/mingw32-make.exe -f Makefile cmTC_215a5/fast
-        C:/msys64/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_215a5.dir\\build.make CMakeFiles/cmTC_215a5.dir/build
-        mingw32-make[1]: Entering directory 'C:/Users/Admin/Downloads/StudentMS/build/CMakeFiles/CMakeScratch/TryCompile-mcylbu'
-        Building CXX object CMakeFiles/cmTC_215a5.dir/CMakeCXXCompilerABI.cpp.obj
-        C:\\msys64\\mingw64\\bin\\c++.exe   -v -o CMakeFiles\\cmTC_215a5.dir\\CMakeCXXCompilerABI.cpp.obj -c "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp"
+        Run Build Command(s): C:/msys64/mingw64/bin/ninja.exe -v cmTC_9d0e1
+        [1/2] C:\\msys64\\mingw64\\bin\\c++.exe   -v -o CMakeFiles/cmTC_9d0e1.dir/CMakeCXXCompilerABI.cpp.obj -c "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeCXXCompilerABI.cpp"
         Using built-in specs.
         COLLECT_GCC=C:\\msys64\\mingw64\\bin\\c++.exe
         Target: x86_64-w64-mingw32
@@ -2002,8 +1945,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 15.2.0 (Rev8, Built by MSYS2 project) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_215a5.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_215a5.dir\\'
-         C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/cc1plus.exe -quiet -v -iprefix C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/ -D_REENTRANT C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles\\cmTC_215a5.dir\\ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=nocona -version -o C:\\Users\\Admin\\AppData\\Local\\Temp\\ccWWLOYh.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_9d0e1.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_9d0e1.dir/'
+         C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/cc1plus.exe -quiet -v -iprefix C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/ -D_REENTRANT C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_9d0e1.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=nocona -version -o C:\\Users\\Admin\\AppData\\Local\\Temp\\ccXTf0Sm.s
         GNU C++17 (Rev8, Built by MSYS2 project) version 15.2.0 (x86_64-w64-mingw32)
         	compiled by GNU C version 15.2.0, GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.3.1, isl version isl-0.27-GMP
         
@@ -2028,14 +1971,13 @@ events:
          C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/include-fixed
         End of search list.
         Compiler executable checksum: e7386b44e3a7fd4f3b26b08cdd95994a
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_215a5.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_215a5.dir\\'
-         C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_215a5.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\Admin\\AppData\\Local\\Temp\\ccWWLOYh.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_9d0e1.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_9d0e1.dir/'
+         C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles/cmTC_9d0e1.dir/CMakeCXXCompilerABI.cpp.obj C:\\Users\\Admin\\AppData\\Local\\Temp\\ccXTf0Sm.s
         GNU assembler version 2.45 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.45
         COMPILER_PATH=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/;C:/msys64/mingw64/bin/../lib/gcc/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/
         LIBRARY_PATH=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/;C:/msys64/mingw64/bin/../lib/gcc/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_215a5.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_215a5.dir\\CMakeCXXCompilerABI.cpp.'
-        Linking CXX executable cmTC_215a5.exe
-        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_215a5.dir\\link.txt --verbose=1
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_9d0e1.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_9d0e1.dir/CMakeCXXCompilerABI.cpp.'
+        [2/2] C:\\windows\\system32\\cmd.exe /C "cd . && C:\\msys64\\mingw64\\bin\\c++.exe  -v -Wl,-v CMakeFiles/cmTC_9d0e1.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_9d0e1.exe -Wl,--out-implib,libcmTC_9d0e1.dll.a -Wl,--major-image-version,0,--minor-image-version,0   && cd ."
         Using built-in specs.
         COLLECT_GCC=C:\\msys64\\mingw64\\bin\\c++.exe
         COLLECT_LTO_WRAPPER=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe
@@ -2046,16 +1988,12 @@ events:
         gcc version 15.2.0 (Rev8, Built by MSYS2 project) 
         COMPILER_PATH=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/;C:/msys64/mingw64/bin/../lib/gcc/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/
         LIBRARY_PATH=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/;C:/msys64/mingw64/bin/../lib/gcc/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/;C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_215a5.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_215a5.'
-         C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/collect2.exe -plugin C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\Admin\\AppData\\Local\\Temp\\ccVZqTwh.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_215a5.exe C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LC:/msys64/mingw64/bin/../lib/gcc -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_215a5.dir/objects.a --no-whole-archive --out-implib libcmTC_215a5.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_9d0e1.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_9d0e1.'
+         C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/collect2.exe -plugin C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\Admin\\AppData\\Local\\Temp\\ccTBQbKO.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_9d0e1.exe C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LC:/msys64/mingw64/bin/../lib/gcc -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v CMakeFiles/cmTC_9d0e1.dir/CMakeCXXCompilerABI.cpp.obj --out-implib libcmTC_9d0e1.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o
         collect2 version 15.2.0
-        C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\Admin\\AppData\\Local\\Temp\\ccVZqTwh.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_215a5.exe C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LC:/msys64/mingw64/bin/../lib/gcc -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_215a5.dir/objects.a --no-whole-archive --out-implib libcmTC_215a5.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o
+        C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\Admin\\AppData\\Local\\Temp\\ccTBQbKO.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_9d0e1.exe C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LC:/msys64/mingw64/bin/../lib/gcc -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v CMakeFiles/cmTC_9d0e1.dir/CMakeCXXCompilerABI.cpp.obj --out-implib libcmTC_9d0e1.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o
         GNU ld (GNU Binutils) 2.45
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_215a5.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_215a5.'
-        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_215a5.dir/objects.a
-        C:\\msys64\\mingw64\\bin\\ar.exe qc CMakeFiles\\cmTC_215a5.dir/objects.a @CMakeFiles\\cmTC_215a5.dir\\objects1.rsp
-        C:\\msys64\\mingw64\\bin\\c++.exe  -v -Wl,-v -Wl,--whole-archive CMakeFiles\\cmTC_215a5.dir/objects.a -Wl,--no-whole-archive -o cmTC_215a5.exe -Wl,--out-implib,libcmTC_215a5.dll.a -Wl,--major-image-version,0,--minor-image-version,0
-        mingw32-make[1]: Leaving directory 'C:/Users/Admin/Downloads/StudentMS/build/CMakeFiles/CMakeScratch/TryCompile-mcylbu'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_9d0e1.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_9d0e1.'
         
       exitCode: 0
   -
@@ -2094,13 +2032,10 @@ events:
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: 'C:/Users/Admin/Downloads/StudentMS/build/CMakeFiles/CMakeScratch/TryCompile-mcylbu']
+        ignore line: [Change Dir: 'C:/Users/Admin/Downloads/StudentMS/build/CMakeFiles/CMakeScratch/TryCompile-xsxf6f']
         ignore line: []
-        ignore line: [Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/msys64/mingw64/bin/mingw32-make.exe -f Makefile cmTC_215a5/fast]
-        ignore line: [C:/msys64/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_215a5.dir\\build.make CMakeFiles/cmTC_215a5.dir/build]
-        ignore line: [mingw32-make[1]: Entering directory 'C:/Users/Admin/Downloads/StudentMS/build/CMakeFiles/CMakeScratch/TryCompile-mcylbu']
-        ignore line: [Building CXX object CMakeFiles/cmTC_215a5.dir/CMakeCXXCompilerABI.cpp.obj]
-        ignore line: [C:\\msys64\\mingw64\\bin\\c++.exe   -v -o CMakeFiles\\cmTC_215a5.dir\\CMakeCXXCompilerABI.cpp.obj -c "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp"]
+        ignore line: [Run Build Command(s): C:/msys64/mingw64/bin/ninja.exe -v cmTC_9d0e1]
+        ignore line: [[1/2] C:\\msys64\\mingw64\\bin\\c++.exe   -v -o CMakeFiles/cmTC_9d0e1.dir/CMakeCXXCompilerABI.cpp.obj -c "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeCXXCompilerABI.cpp"]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=C:\\msys64\\mingw64\\bin\\c++.exe]
         ignore line: [Target: x86_64-w64-mingw32]
@@ -2108,8 +2043,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 15.2.0 (Rev8  Built by MSYS2 project) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_215a5.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_215a5.dir\\']
-        ignore line: [ C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/cc1plus.exe -quiet -v -iprefix C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/ -D_REENTRANT C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles\\cmTC_215a5.dir\\ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=nocona -version -o C:\\Users\\Admin\\AppData\\Local\\Temp\\ccWWLOYh.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_9d0e1.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_9d0e1.dir/']
+        ignore line: [ C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/cc1plus.exe -quiet -v -iprefix C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/ -D_REENTRANT C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_9d0e1.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=nocona -version -o C:\\Users\\Admin\\AppData\\Local\\Temp\\ccXTf0Sm.s]
         ignore line: [GNU C++17 (Rev8  Built by MSYS2 project) version 15.2.0 (x86_64-w64-mingw32)]
         ignore line: [	compiled by GNU C version 15.2.0  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.3.1  isl version isl-0.27-GMP]
         ignore line: []
@@ -2134,8 +2069,8 @@ events:
         ignore line: [ C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/include-fixed]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: e7386b44e3a7fd4f3b26b08cdd95994a]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_215a5.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_215a5.dir\\']
-        ignore line: [ C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles\\cmTC_215a5.dir\\CMakeCXXCompilerABI.cpp.obj C:\\Users\\Admin\\AppData\\Local\\Temp\\ccWWLOYh.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_9d0e1.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_9d0e1.dir/']
+        ignore line: [ C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/as.exe -v -o CMakeFiles/cmTC_9d0e1.dir/CMakeCXXCompilerABI.cpp.obj C:\\Users\\Admin\\AppData\\Local\\Temp\\ccXTf0Sm.s]
         ignore line: [GNU assembler version 2.45 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.45]
         ignore line: [COMPILER_PATH=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/]
         ignore line: [C:/msys64/mingw64/bin/../lib/gcc/]
@@ -2146,9 +2081,8 @@ events:
         ignore line: [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/]
         ignore line: [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/]
         ignore line: [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles\\cmTC_215a5.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles\\cmTC_215a5.dir\\CMakeCXXCompilerABI.cpp.']
-        ignore line: [Linking CXX executable cmTC_215a5.exe]
-        ignore line: ["C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_215a5.dir\\link.txt --verbose=1]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_9d0e1.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_9d0e1.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [[2/2] C:\\windows\\system32\\cmd.exe /C "cd . && C:\\msys64\\mingw64\\bin\\c++.exe  -v -Wl -v CMakeFiles/cmTC_9d0e1.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_9d0e1.exe -Wl --out-implib libcmTC_9d0e1.dll.a -Wl --major-image-version 0 --minor-image-version 0   && cd ."]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=C:\\msys64\\mingw64\\bin\\c++.exe]
         ignore line: [COLLECT_LTO_WRAPPER=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe]
@@ -2166,13 +2100,13 @@ events:
         ignore line: [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/]
         ignore line: [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/]
         ignore line: [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_215a5.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_215a5.']
-        link line: [ C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/collect2.exe -plugin C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\Admin\\AppData\\Local\\Temp\\ccVZqTwh.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_215a5.exe C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LC:/msys64/mingw64/bin/../lib/gcc -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_215a5.dir/objects.a --no-whole-archive --out-implib libcmTC_215a5.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_9d0e1.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_9d0e1.']
+        link line: [ C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/collect2.exe -plugin C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\Admin\\AppData\\Local\\Temp\\ccTBQbKO.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_9d0e1.exe C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LC:/msys64/mingw64/bin/../lib/gcc -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v CMakeFiles/cmTC_9d0e1.dir/CMakeCXXCompilerABI.cpp.obj --out-implib libcmTC_9d0e1.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o]
           arg [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/collect2.exe] ==> ignore
           arg [-plugin] ==> ignore
           arg [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll] ==> ignore
           arg [-plugin-opt=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe] ==> ignore
-          arg [-plugin-opt=-fresolution=C:\\Users\\Admin\\AppData\\Local\\Temp\\ccVZqTwh.res] ==> ignore
+          arg [-plugin-opt=-fresolution=C:\\Users\\Admin\\AppData\\Local\\Temp\\ccTBQbKO.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
@@ -2194,7 +2128,7 @@ events:
           arg [i386pep] ==> ignore
           arg [-Bdynamic] ==> search dynamic
           arg [-o] ==> ignore
-          arg [cmTC_215a5.exe] ==> ignore
+          arg [cmTC_9d0e1.exe] ==> ignore
           arg [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o] ==> obj [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o]
           arg [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o] ==> obj [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o]
           arg [-LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0] ==> dir [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0]
@@ -2204,11 +2138,9 @@ events:
           arg [-LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib] ==> dir [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib]
           arg [-LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../..] ==> dir [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../..]
           arg [-v] ==> ignore
-          arg [--whole-archive] ==> ignore
-          arg [CMakeFiles\\cmTC_215a5.dir/objects.a] ==> ignore
-          arg [--no-whole-archive] ==> ignore
+          arg [CMakeFiles/cmTC_9d0e1.dir/CMakeCXXCompilerABI.cpp.obj] ==> ignore
           arg [--out-implib] ==> ignore
-          arg [libcmTC_215a5.dll.a] ==> ignore
+          arg [libcmTC_9d0e1.dll.a] ==> ignore
           arg [--major-image-version] ==> ignore
           arg [0] ==> ignore
           arg [--minor-image-version] ==> ignore
@@ -2234,7 +2166,7 @@ events:
           arg [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o] ==> obj [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o]
           arg [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o] ==> obj [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o]
         ignore line: [collect2 version 15.2.0]
-        ignore line: [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\Admin\\AppData\\Local\\Temp\\ccVZqTwh.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_215a5.exe C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LC:/msys64/mingw64/bin/../lib/gcc -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v --whole-archive CMakeFiles\\cmTC_215a5.dir/objects.a --no-whole-archive --out-implib libcmTC_215a5.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o]
+        ignore line: [C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe -plugin C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/liblto_plugin.dll -plugin-opt=C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\Admin\\AppData\\Local\\Temp\\ccTBQbKO.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lkernel32 -m i386pep -Bdynamic -o cmTC_9d0e1.exe C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/crt2.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtbegin.o -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0 -LC:/msys64/mingw64/bin/../lib/gcc -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/lib -LC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../.. -v CMakeFiles/cmTC_9d0e1.dir/CMakeCXXCompilerABI.cpp.obj --out-implib libcmTC_9d0e1.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmingwex -lmsvcrt -lkernel32 C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../lib/default-manifest.o C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/crtend.o]
         linker tool for 'CXX': C:/msys64/mingw64/x86_64-w64-mingw32/bin/ld.exe
         remove lib [msvcrt]
         remove lib [msvcrt]
@@ -2280,8 +2212,8 @@ events:
     checks:
       - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
     directories:
-      source: "C:/Users/Admin/Downloads/StudentMS/build/CMakeFiles/CMakeScratch/TryCompile-xgkkrp"
-      binary: "C:/Users/Admin/Downloads/StudentMS/build/CMakeFiles/CMakeScratch/TryCompile-xgkkrp"
+      source: "C:/Users/Admin/Downloads/StudentMS/build/CMakeFiles/CMakeScratch/TryCompile-t8m6wr"
+      binary: "C:/Users/Admin/Downloads/StudentMS/build/CMakeFiles/CMakeScratch/TryCompile-t8m6wr"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -2292,19 +2224,11 @@ events:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/Admin/Downloads/StudentMS/build/CMakeFiles/CMakeScratch/TryCompile-xgkkrp'
+        Change Dir: 'C:/Users/Admin/Downloads/StudentMS/build/CMakeFiles/CMakeScratch/TryCompile-t8m6wr'
         
-        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/msys64/mingw64/bin/mingw32-make.exe -f Makefile cmTC_62589/fast
-        C:/msys64/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_62589.dir\\build.make CMakeFiles/cmTC_62589.dir/build
-        mingw32-make[1]: Entering directory 'C:/Users/Admin/Downloads/StudentMS/build/CMakeFiles/CMakeScratch/TryCompile-xgkkrp'
-        Building CXX object CMakeFiles/cmTC_62589.dir/src.cxx.obj
-        C:\\msys64\\mingw64\\bin\\c++.exe -DCMAKE_HAVE_LIBC_PTHREAD  -std=gnu++17 -o CMakeFiles\\cmTC_62589.dir\\src.cxx.obj -c C:\\Users\\Admin\\Downloads\\StudentMS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xgkkrp\\src.cxx
-        Linking CXX executable cmTC_62589.exe
-        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_62589.dir\\link.txt --verbose=1
-        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_62589.dir/objects.a
-        C:\\msys64\\mingw64\\bin\\ar.exe qc CMakeFiles\\cmTC_62589.dir/objects.a @CMakeFiles\\cmTC_62589.dir\\objects1.rsp
-        C:\\msys64\\mingw64\\bin\\c++.exe -Wl,--whole-archive CMakeFiles\\cmTC_62589.dir/objects.a -Wl,--no-whole-archive -o cmTC_62589.exe -Wl,--out-implib,libcmTC_62589.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_62589.dir\\linkLibs.rsp
-        mingw32-make[1]: Leaving directory 'C:/Users/Admin/Downloads/StudentMS/build/CMakeFiles/CMakeScratch/TryCompile-xgkkrp'
+        Run Build Command(s): C:/msys64/mingw64/bin/ninja.exe -v cmTC_73bff
+        [1/2] C:\\msys64\\mingw64\\bin\\c++.exe -DCMAKE_HAVE_LIBC_PTHREAD  -std=gnu++17 -o CMakeFiles/cmTC_73bff.dir/src.cxx.obj -c C:/Users/Admin/Downloads/StudentMS/build/CMakeFiles/CMakeScratch/TryCompile-t8m6wr/src.cxx
+        [2/2] C:\\windows\\system32\\cmd.exe /C "cd . && C:\\msys64\\mingw64\\bin\\c++.exe   CMakeFiles/cmTC_73bff.dir/src.cxx.obj -o cmTC_73bff.exe -Wl,--out-implib,libcmTC_73bff.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
         
       exitCode: 0
   -
@@ -2843,8 +2767,6 @@ events:
       mode: "config"
       version: "6.5.3"
     search_context:
-      ENV{CMAKE_PREFIX_PATH}:
-        - "C:\\Qt\\6.5.0\\mingw_64"
       ENV{PATH}:
         - "C:\\msys64\\mingw64\\bin"
         - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
@@ -2873,12 +2795,12 @@ events:
         - "C:\\Users\\Admin\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\Admin\\AppData\\Roaming\\npm"
         - "C:\\Users\\Admin\\AppData\\Local\\Programs\\Antigravity\\bin"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/StudentMS"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/QuanLyHoSoSinhVien"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
         - "C:/Program Files (x86)"
         - "C:/Program Files/CMake"
-        - "C:/Program Files (x86)/StudentMS"
+        - "C:/Program Files (x86)/QuanLyHoSoSinhVien"
       CMAKE_MODULE_PATH:
         - "C:/Qt/6.5.3/mingw_64/lib/cmake/Qt6"
         - "C:/Qt/6.5.3/mingw_64/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules"
@@ -3419,8 +3341,6 @@ events:
       mode: "config"
       version: "6.5.3"
     search_context:
-      ENV{CMAKE_PREFIX_PATH}:
-        - "C:\\Qt\\6.5.0\\mingw_64"
       ENV{PATH}:
         - "C:\\msys64\\mingw64\\bin"
         - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
@@ -3449,12 +3369,12 @@ events:
         - "C:\\Users\\Admin\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\Admin\\AppData\\Roaming\\npm"
         - "C:\\Users\\Admin\\AppData\\Local\\Programs\\Antigravity\\bin"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/StudentMS"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/QuanLyHoSoSinhVien"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
         - "C:/Program Files (x86)"
         - "C:/Program Files/CMake"
-        - "C:/Program Files (x86)/StudentMS"
+        - "C:/Program Files (x86)/QuanLyHoSoSinhVien"
       CMAKE_MODULE_PATH:
         - "C:/Qt/6.5.3/mingw_64/lib/cmake/Qt6"
         - "C:/Qt/6.5.3/mingw_64/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules"
@@ -3994,8 +3914,6 @@ events:
       mode: "config"
       version: "6.5.3"
     search_context:
-      ENV{CMAKE_PREFIX_PATH}:
-        - "C:\\Qt\\6.5.0\\mingw_64"
       ENV{PATH}:
         - "C:\\msys64\\mingw64\\bin"
         - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
@@ -4024,12 +3942,12 @@ events:
         - "C:\\Users\\Admin\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\Admin\\AppData\\Roaming\\npm"
         - "C:\\Users\\Admin\\AppData\\Local\\Programs\\Antigravity\\bin"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/StudentMS"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/QuanLyHoSoSinhVien"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
         - "C:/Program Files (x86)"
         - "C:/Program Files/CMake"
-        - "C:/Program Files (x86)/StudentMS"
+        - "C:/Program Files (x86)/QuanLyHoSoSinhVien"
   -
     kind: "try_compile-v1"
     backtrace:
@@ -4051,8 +3969,8 @@ events:
     checks:
       - "Performing Test HAVE_STDATOMIC"
     directories:
-      source: "C:/Users/Admin/Downloads/StudentMS/build/CMakeFiles/CMakeScratch/TryCompile-dbr2bk"
-      binary: "C:/Users/Admin/Downloads/StudentMS/build/CMakeFiles/CMakeScratch/TryCompile-dbr2bk"
+      source: "C:/Users/Admin/Downloads/StudentMS/build/CMakeFiles/CMakeScratch/TryCompile-t6rz8h"
+      binary: "C:/Users/Admin/Downloads/StudentMS/build/CMakeFiles/CMakeScratch/TryCompile-t6rz8h"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -4063,19 +3981,11 @@ events:
       variable: "HAVE_STDATOMIC"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/Admin/Downloads/StudentMS/build/CMakeFiles/CMakeScratch/TryCompile-dbr2bk'
+        Change Dir: 'C:/Users/Admin/Downloads/StudentMS/build/CMakeFiles/CMakeScratch/TryCompile-t6rz8h'
         
-        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 C:/msys64/mingw64/bin/mingw32-make.exe -f Makefile cmTC_8fed3/fast
-        C:/msys64/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_8fed3.dir\\build.make CMakeFiles/cmTC_8fed3.dir/build
-        mingw32-make[1]: Entering directory 'C:/Users/Admin/Downloads/StudentMS/build/CMakeFiles/CMakeScratch/TryCompile-dbr2bk'
-        Building CXX object CMakeFiles/cmTC_8fed3.dir/src.cxx.obj
-        C:\\msys64\\mingw64\\bin\\c++.exe -DHAVE_STDATOMIC  -std=gnu++17 -o CMakeFiles\\cmTC_8fed3.dir\\src.cxx.obj -c C:\\Users\\Admin\\Downloads\\StudentMS\\build\\CMakeFiles\\CMakeScratch\\TryCompile-dbr2bk\\src.cxx
-        Linking CXX executable cmTC_8fed3.exe
-        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_8fed3.dir\\link.txt --verbose=1
-        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E rm -f CMakeFiles\\cmTC_8fed3.dir/objects.a
-        C:\\msys64\\mingw64\\bin\\ar.exe qc CMakeFiles\\cmTC_8fed3.dir/objects.a @CMakeFiles\\cmTC_8fed3.dir\\objects1.rsp
-        C:\\msys64\\mingw64\\bin\\c++.exe -Wl,--whole-archive CMakeFiles\\cmTC_8fed3.dir/objects.a -Wl,--no-whole-archive -o cmTC_8fed3.exe -Wl,--out-implib,libcmTC_8fed3.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\\cmTC_8fed3.dir\\linkLibs.rsp
-        mingw32-make[1]: Leaving directory 'C:/Users/Admin/Downloads/StudentMS/build/CMakeFiles/CMakeScratch/TryCompile-dbr2bk'
+        Run Build Command(s): C:/msys64/mingw64/bin/ninja.exe -v cmTC_48416
+        [1/2] C:\\msys64\\mingw64\\bin\\c++.exe -DHAVE_STDATOMIC  -std=gnu++17 -o CMakeFiles/cmTC_48416.dir/src.cxx.obj -c C:/Users/Admin/Downloads/StudentMS/build/CMakeFiles/CMakeScratch/TryCompile-t6rz8h/src.cxx
+        [2/2] C:\\windows\\system32\\cmd.exe /C "cd . && C:\\msys64\\mingw64\\bin\\c++.exe   CMakeFiles/cmTC_48416.dir/src.cxx.obj -o cmTC_48416.exe -Wl,--out-implib,libcmTC_48416.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
         
       exitCode: 0
   -
@@ -4225,8 +4135,6 @@ events:
       mode: "config"
       version: "6.5.3"
     search_context:
-      ENV{CMAKE_PREFIX_PATH}:
-        - "C:\\Qt\\6.5.0\\mingw_64"
       ENV{PATH}:
         - "C:\\msys64\\mingw64\\bin"
         - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
@@ -4255,12 +4163,12 @@ events:
         - "C:\\Users\\Admin\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\Admin\\AppData\\Roaming\\npm"
         - "C:\\Users\\Admin\\AppData\\Local\\Programs\\Antigravity\\bin"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/StudentMS"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/QuanLyHoSoSinhVien"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
         - "C:/Program Files (x86)"
         - "C:/Program Files/CMake"
-        - "C:/Program Files (x86)/StudentMS"
+        - "C:/Program Files (x86)/QuanLyHoSoSinhVien"
   -
     kind: "find_package-v1"
     backtrace:
@@ -4408,8 +4316,6 @@ events:
       mode: "config"
       version: "6.5.3"
     search_context:
-      ENV{CMAKE_PREFIX_PATH}:
-        - "C:\\Qt\\6.5.0\\mingw_64"
       ENV{PATH}:
         - "C:\\msys64\\mingw64\\bin"
         - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
@@ -4438,12 +4344,12 @@ events:
         - "C:\\Users\\Admin\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\Admin\\AppData\\Roaming\\npm"
         - "C:\\Users\\Admin\\AppData\\Local\\Programs\\Antigravity\\bin"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/StudentMS"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/QuanLyHoSoSinhVien"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
         - "C:/Program Files (x86)"
         - "C:/Program Files/CMake"
-        - "C:/Program Files (x86)/StudentMS"
+        - "C:/Program Files (x86)/QuanLyHoSoSinhVien"
   -
     kind: "find-v1"
     backtrace:
@@ -4471,9 +4377,6 @@ events:
     names:
       - "windeployqt"
     candidate_directories:
-      - "C:/Qt/6.5.0/mingw_64/bin/"
-      - "C:/Qt/6.5.0/mingw_64/sbin/"
-      - "C:/Qt/6.5.0/mingw_64/"
       - "C:/Qt/6.5.3/mingw_64/bin/"
       - "C:/msys64/mingw64/bin/"
       - "C:/Program Files/Common Files/Oracle/Java/javapath/"
@@ -4509,24 +4412,13 @@ events:
       - "C:/Program Files/CMake/bin/"
       - "C:/Program Files/CMake/sbin/"
       - "C:/Program Files/CMake/"
-      - "C:/Program Files (x86)/StudentMS/bin/"
-      - "C:/Program Files (x86)/StudentMS/sbin/"
-      - "C:/Program Files (x86)/StudentMS/"
+      - "C:/Program Files (x86)/QuanLyHoSoSinhVien/bin/"
+      - "C:/Program Files (x86)/QuanLyHoSoSinhVien/sbin/"
+      - "C:/Program Files (x86)/QuanLyHoSoSinhVien/"
     searched_directories:
-      - "C:/Qt/6.5.0/mingw_64/bin/windeployqt.com"
-      - "C:/Qt/6.5.0/mingw_64/bin/windeployqt.exe"
-      - "C:/Qt/6.5.0/mingw_64/bin/windeployqt"
-      - "C:/Qt/6.5.0/mingw_64/sbin/windeployqt.com"
-      - "C:/Qt/6.5.0/mingw_64/sbin/windeployqt.exe"
-      - "C:/Qt/6.5.0/mingw_64/sbin/windeployqt"
-      - "C:/Qt/6.5.0/mingw_64/windeployqt.com"
-      - "C:/Qt/6.5.0/mingw_64/windeployqt.exe"
-      - "C:/Qt/6.5.0/mingw_64/windeployqt"
       - "C:/Qt/6.5.3/mingw_64/bin/windeployqt.com"
     found: "C:/Qt/6.5.3/mingw_64/bin/windeployqt.exe"
     search_context:
-      ENV{CMAKE_PREFIX_PATH}:
-        - "C:\\Qt\\6.5.0\\mingw_64"
       ENV{PATH}:
         - "C:\\msys64\\mingw64\\bin"
         - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
@@ -4555,12 +4447,12 @@ events:
         - "C:\\Users\\Admin\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\Admin\\AppData\\Roaming\\npm"
         - "C:\\Users\\Admin\\AppData\\Local\\Programs\\Antigravity\\bin"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/StudentMS"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/QuanLyHoSoSinhVien"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
         - "C:/Program Files (x86)"
         - "C:/Program Files/CMake"
-        - "C:/Program Files (x86)/StudentMS"
+        - "C:/Program Files (x86)/QuanLyHoSoSinhVien"
   -
     kind: "find_package-v1"
     backtrace:
@@ -4658,8 +4550,6 @@ events:
       mode: "config"
       version: "6.5.3"
     search_context:
-      ENV{CMAKE_PREFIX_PATH}:
-        - "C:\\Qt\\6.5.0\\mingw_64"
       ENV{PATH}:
         - "C:\\msys64\\mingw64\\bin"
         - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
@@ -4688,12 +4578,12 @@ events:
         - "C:\\Users\\Admin\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\Admin\\AppData\\Roaming\\npm"
         - "C:\\Users\\Admin\\AppData\\Local\\Programs\\Antigravity\\bin"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/StudentMS"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/QuanLyHoSoSinhVien"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
         - "C:/Program Files (x86)"
         - "C:/Program Files/CMake"
-        - "C:/Program Files (x86)/StudentMS"
+        - "C:/Program Files (x86)/QuanLyHoSoSinhVien"
   -
     kind: "find-v1"
     backtrace:
@@ -4723,8 +4613,6 @@ events:
     names:
       - "vulkan/vulkan.h"
     candidate_directories:
-      - "C:/Qt/6.5.0/mingw_64/include/"
-      - "C:/Qt/6.5.0/mingw_64/"
       - "C:/msys64/mingw64/bin/"
       - "C:/Program Files/Common Files/Oracle/Java/javapath/"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/"
@@ -4757,11 +4645,9 @@ events:
       - "C:/Program Files (x86)/"
       - "C:/Program Files/CMake/include/"
       - "C:/Program Files/CMake/"
-      - "C:/Program Files (x86)/StudentMS/include/"
-      - "C:/Program Files (x86)/StudentMS/"
+      - "C:/Program Files (x86)/QuanLyHoSoSinhVien/include/"
+      - "C:/Program Files (x86)/QuanLyHoSoSinhVien/"
     searched_directories:
-      - "C:/Qt/6.5.0/mingw_64/include/vulkan/vulkan.h"
-      - "C:/Qt/6.5.0/mingw_64/vulkan/vulkan.h"
       - "C:/msys64/mingw64/bin/vulkan/vulkan.h"
       - "C:/Program Files/Common Files/Oracle/Java/javapath/vulkan/vulkan.h"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/vulkan/vulkan.h"
@@ -4794,12 +4680,10 @@ events:
       - "C:/Program Files (x86)/vulkan/vulkan.h"
       - "C:/Program Files/CMake/include/vulkan/vulkan.h"
       - "C:/Program Files/CMake/vulkan/vulkan.h"
-      - "C:/Program Files (x86)/StudentMS/include/vulkan/vulkan.h"
-      - "C:/Program Files (x86)/StudentMS/vulkan/vulkan.h"
+      - "C:/Program Files (x86)/QuanLyHoSoSinhVien/include/vulkan/vulkan.h"
+      - "C:/Program Files (x86)/QuanLyHoSoSinhVien/vulkan/vulkan.h"
     found: false
     search_context:
-      ENV{CMAKE_PREFIX_PATH}:
-        - "C:\\Qt\\6.5.0\\mingw_64"
       ENV{PATH}:
         - "C:\\msys64\\mingw64\\bin"
         - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
@@ -4828,12 +4712,12 @@ events:
         - "C:\\Users\\Admin\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\Admin\\AppData\\Roaming\\npm"
         - "C:\\Users\\Admin\\AppData\\Local\\Programs\\Antigravity\\bin"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/StudentMS"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/QuanLyHoSoSinhVien"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
         - "C:/Program Files (x86)"
         - "C:/Program Files/CMake"
-        - "C:/Program Files (x86)/StudentMS"
+        - "C:/Program Files (x86)/QuanLyHoSoSinhVien"
   -
     kind: "find-v1"
     backtrace:
@@ -4863,8 +4747,6 @@ events:
     names:
       - "vulkan-1"
     candidate_directories:
-      - "C:/Qt/6.5.0/mingw_64/lib/"
-      - "C:/Qt/6.5.0/mingw_64/"
       - "C:/msys64/mingw64/bin/"
       - "C:/Program Files/Common Files/Oracle/Java/javapath/"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/"
@@ -4897,13 +4779,11 @@ events:
       - "C:/Program Files (x86)/"
       - "C:/Program Files/CMake/lib/"
       - "C:/Program Files/CMake/"
-      - "C:/Program Files (x86)/StudentMS/lib/"
-      - "C:/Program Files (x86)/StudentMS/"
-      - "C:/Program Files (x86)/StudentMS/bin/"
+      - "C:/Program Files (x86)/QuanLyHoSoSinhVien/lib/"
+      - "C:/Program Files (x86)/QuanLyHoSoSinhVien/"
+      - "C:/Program Files (x86)/QuanLyHoSoSinhVien/bin/"
       - "/bin/"
     searched_directories:
-      - "C:/Qt/6.5.0/mingw_64/lib/"
-      - "C:/Qt/6.5.0/mingw_64/"
       - "C:/msys64/mingw64/bin/"
       - "C:/Program Files/Common Files/Oracle/Java/javapath/"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/"
@@ -4936,14 +4816,12 @@ events:
       - "C:/Program Files (x86)/"
       - "C:/Program Files/CMake/lib/"
       - "C:/Program Files/CMake/"
-      - "C:/Program Files (x86)/StudentMS/lib/"
-      - "C:/Program Files (x86)/StudentMS/"
-      - "C:/Program Files (x86)/StudentMS/bin/"
+      - "C:/Program Files (x86)/QuanLyHoSoSinhVien/lib/"
+      - "C:/Program Files (x86)/QuanLyHoSoSinhVien/"
+      - "C:/Program Files (x86)/QuanLyHoSoSinhVien/bin/"
       - "/bin/"
     found: false
     search_context:
-      ENV{CMAKE_PREFIX_PATH}:
-        - "C:\\Qt\\6.5.0\\mingw_64"
       ENV{PATH}:
         - "C:\\msys64\\mingw64\\bin"
         - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
@@ -4972,14 +4850,14 @@ events:
         - "C:\\Users\\Admin\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\Admin\\AppData\\Roaming\\npm"
         - "C:\\Users\\Admin\\AppData\\Local\\Programs\\Antigravity\\bin"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/StudentMS"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/QuanLyHoSoSinhVien"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
         - "C:/Program Files (x86)"
         - "C:/Program Files/CMake"
-        - "C:/Program Files (x86)/StudentMS"
+        - "C:/Program Files (x86)/QuanLyHoSoSinhVien"
       CMAKE_SYSTEM_LIBRARY_PATH:
-        - "C:/Program Files (x86)/StudentMS/bin"
+        - "C:/Program Files (x86)/QuanLyHoSoSinhVien/bin"
         - "C:/Program Files/CMake/bin"
         - "/bin"
   -
@@ -5011,9 +4889,6 @@ events:
     names:
       - "glslc"
     candidate_directories:
-      - "C:/Qt/6.5.0/mingw_64/bin/"
-      - "C:/Qt/6.5.0/mingw_64/sbin/"
-      - "C:/Qt/6.5.0/mingw_64/"
       - "C:/msys64/mingw64/bin/"
       - "C:/Program Files/Common Files/Oracle/Java/javapath/"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/"
@@ -5049,19 +4924,10 @@ events:
       - "C:/Program Files/CMake/bin/"
       - "C:/Program Files/CMake/sbin/"
       - "C:/Program Files/CMake/"
-      - "C:/Program Files (x86)/StudentMS/bin/"
-      - "C:/Program Files (x86)/StudentMS/sbin/"
-      - "C:/Program Files (x86)/StudentMS/"
+      - "C:/Program Files (x86)/QuanLyHoSoSinhVien/bin/"
+      - "C:/Program Files (x86)/QuanLyHoSoSinhVien/sbin/"
+      - "C:/Program Files (x86)/QuanLyHoSoSinhVien/"
     searched_directories:
-      - "C:/Qt/6.5.0/mingw_64/bin/glslc.com"
-      - "C:/Qt/6.5.0/mingw_64/bin/glslc.exe"
-      - "C:/Qt/6.5.0/mingw_64/bin/glslc"
-      - "C:/Qt/6.5.0/mingw_64/sbin/glslc.com"
-      - "C:/Qt/6.5.0/mingw_64/sbin/glslc.exe"
-      - "C:/Qt/6.5.0/mingw_64/sbin/glslc"
-      - "C:/Qt/6.5.0/mingw_64/glslc.com"
-      - "C:/Qt/6.5.0/mingw_64/glslc.exe"
-      - "C:/Qt/6.5.0/mingw_64/glslc"
       - "C:/msys64/mingw64/bin/glslc.com"
       - "C:/msys64/mingw64/bin/glslc.exe"
       - "C:/msys64/mingw64/bin/glslc"
@@ -5167,19 +5033,17 @@ events:
       - "C:/Program Files/CMake/glslc.com"
       - "C:/Program Files/CMake/glslc.exe"
       - "C:/Program Files/CMake/glslc"
-      - "C:/Program Files (x86)/StudentMS/bin/glslc.com"
-      - "C:/Program Files (x86)/StudentMS/bin/glslc.exe"
-      - "C:/Program Files (x86)/StudentMS/bin/glslc"
-      - "C:/Program Files (x86)/StudentMS/sbin/glslc.com"
-      - "C:/Program Files (x86)/StudentMS/sbin/glslc.exe"
-      - "C:/Program Files (x86)/StudentMS/sbin/glslc"
-      - "C:/Program Files (x86)/StudentMS/glslc.com"
-      - "C:/Program Files (x86)/StudentMS/glslc.exe"
-      - "C:/Program Files (x86)/StudentMS/glslc"
+      - "C:/Program Files (x86)/QuanLyHoSoSinhVien/bin/glslc.com"
+      - "C:/Program Files (x86)/QuanLyHoSoSinhVien/bin/glslc.exe"
+      - "C:/Program Files (x86)/QuanLyHoSoSinhVien/bin/glslc"
+      - "C:/Program Files (x86)/QuanLyHoSoSinhVien/sbin/glslc.com"
+      - "C:/Program Files (x86)/QuanLyHoSoSinhVien/sbin/glslc.exe"
+      - "C:/Program Files (x86)/QuanLyHoSoSinhVien/sbin/glslc"
+      - "C:/Program Files (x86)/QuanLyHoSoSinhVien/glslc.com"
+      - "C:/Program Files (x86)/QuanLyHoSoSinhVien/glslc.exe"
+      - "C:/Program Files (x86)/QuanLyHoSoSinhVien/glslc"
     found: false
     search_context:
-      ENV{CMAKE_PREFIX_PATH}:
-        - "C:\\Qt\\6.5.0\\mingw_64"
       ENV{PATH}:
         - "C:\\msys64\\mingw64\\bin"
         - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
@@ -5208,12 +5072,12 @@ events:
         - "C:\\Users\\Admin\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\Admin\\AppData\\Roaming\\npm"
         - "C:\\Users\\Admin\\AppData\\Local\\Programs\\Antigravity\\bin"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/StudentMS"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/QuanLyHoSoSinhVien"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
         - "C:/Program Files (x86)"
         - "C:/Program Files/CMake"
-        - "C:/Program Files (x86)/StudentMS"
+        - "C:/Program Files (x86)/QuanLyHoSoSinhVien"
   -
     kind: "find-v1"
     backtrace:
@@ -5243,9 +5107,6 @@ events:
     names:
       - "glslangValidator"
     candidate_directories:
-      - "C:/Qt/6.5.0/mingw_64/bin/"
-      - "C:/Qt/6.5.0/mingw_64/sbin/"
-      - "C:/Qt/6.5.0/mingw_64/"
       - "C:/msys64/mingw64/bin/"
       - "C:/Program Files/Common Files/Oracle/Java/javapath/"
       - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/"
@@ -5281,19 +5142,10 @@ events:
       - "C:/Program Files/CMake/bin/"
       - "C:/Program Files/CMake/sbin/"
       - "C:/Program Files/CMake/"
-      - "C:/Program Files (x86)/StudentMS/bin/"
-      - "C:/Program Files (x86)/StudentMS/sbin/"
-      - "C:/Program Files (x86)/StudentMS/"
+      - "C:/Program Files (x86)/QuanLyHoSoSinhVien/bin/"
+      - "C:/Program Files (x86)/QuanLyHoSoSinhVien/sbin/"
+      - "C:/Program Files (x86)/QuanLyHoSoSinhVien/"
     searched_directories:
-      - "C:/Qt/6.5.0/mingw_64/bin/glslangValidator.com"
-      - "C:/Qt/6.5.0/mingw_64/bin/glslangValidator.exe"
-      - "C:/Qt/6.5.0/mingw_64/bin/glslangValidator"
-      - "C:/Qt/6.5.0/mingw_64/sbin/glslangValidator.com"
-      - "C:/Qt/6.5.0/mingw_64/sbin/glslangValidator.exe"
-      - "C:/Qt/6.5.0/mingw_64/sbin/glslangValidator"
-      - "C:/Qt/6.5.0/mingw_64/glslangValidator.com"
-      - "C:/Qt/6.5.0/mingw_64/glslangValidator.exe"
-      - "C:/Qt/6.5.0/mingw_64/glslangValidator"
       - "C:/msys64/mingw64/bin/glslangValidator.com"
       - "C:/msys64/mingw64/bin/glslangValidator.exe"
       - "C:/msys64/mingw64/bin/glslangValidator"
@@ -5399,19 +5251,17 @@ events:
       - "C:/Program Files/CMake/glslangValidator.com"
       - "C:/Program Files/CMake/glslangValidator.exe"
       - "C:/Program Files/CMake/glslangValidator"
-      - "C:/Program Files (x86)/StudentMS/bin/glslangValidator.com"
-      - "C:/Program Files (x86)/StudentMS/bin/glslangValidator.exe"
-      - "C:/Program Files (x86)/StudentMS/bin/glslangValidator"
-      - "C:/Program Files (x86)/StudentMS/sbin/glslangValidator.com"
-      - "C:/Program Files (x86)/StudentMS/sbin/glslangValidator.exe"
-      - "C:/Program Files (x86)/StudentMS/sbin/glslangValidator"
-      - "C:/Program Files (x86)/StudentMS/glslangValidator.com"
-      - "C:/Program Files (x86)/StudentMS/glslangValidator.exe"
-      - "C:/Program Files (x86)/StudentMS/glslangValidator"
+      - "C:/Program Files (x86)/QuanLyHoSoSinhVien/bin/glslangValidator.com"
+      - "C:/Program Files (x86)/QuanLyHoSoSinhVien/bin/glslangValidator.exe"
+      - "C:/Program Files (x86)/QuanLyHoSoSinhVien/bin/glslangValidator"
+      - "C:/Program Files (x86)/QuanLyHoSoSinhVien/sbin/glslangValidator.com"
+      - "C:/Program Files (x86)/QuanLyHoSoSinhVien/sbin/glslangValidator.exe"
+      - "C:/Program Files (x86)/QuanLyHoSoSinhVien/sbin/glslangValidator"
+      - "C:/Program Files (x86)/QuanLyHoSoSinhVien/glslangValidator.com"
+      - "C:/Program Files (x86)/QuanLyHoSoSinhVien/glslangValidator.exe"
+      - "C:/Program Files (x86)/QuanLyHoSoSinhVien/glslangValidator"
     found: false
     search_context:
-      ENV{CMAKE_PREFIX_PATH}:
-        - "C:\\Qt\\6.5.0\\mingw_64"
       ENV{PATH}:
         - "C:\\msys64\\mingw64\\bin"
         - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
@@ -5440,12 +5290,12 @@ events:
         - "C:\\Users\\Admin\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\Admin\\AppData\\Roaming\\npm"
         - "C:\\Users\\Admin\\AppData\\Local\\Programs\\Antigravity\\bin"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/StudentMS"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/QuanLyHoSoSinhVien"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
         - "C:/Program Files (x86)"
         - "C:/Program Files/CMake"
-        - "C:/Program Files (x86)/StudentMS"
+        - "C:/Program Files (x86)/QuanLyHoSoSinhVien"
   -
     kind: "find_package-v1"
     backtrace:
@@ -5543,8 +5393,6 @@ events:
       mode: "config"
       version: "6.5.3"
     search_context:
-      ENV{CMAKE_PREFIX_PATH}:
-        - "C:\\Qt\\6.5.0\\mingw_64"
       ENV{PATH}:
         - "C:\\msys64\\mingw64\\bin"
         - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
@@ -5573,12 +5421,12 @@ events:
         - "C:\\Users\\Admin\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\Admin\\AppData\\Roaming\\npm"
         - "C:\\Users\\Admin\\AppData\\Local\\Programs\\Antigravity\\bin"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/StudentMS"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/QuanLyHoSoSinhVien"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
         - "C:/Program Files (x86)"
         - "C:/Program Files/CMake"
-        - "C:/Program Files (x86)/StudentMS"
+        - "C:/Program Files (x86)/QuanLyHoSoSinhVien"
   -
     kind: "find_package-v1"
     backtrace:
@@ -5668,8 +5516,6 @@ events:
       mode: "config"
       version: "6.5.3"
     search_context:
-      ENV{CMAKE_PREFIX_PATH}:
-        - "C:\\Qt\\6.5.0\\mingw_64"
       ENV{PATH}:
         - "C:\\msys64\\mingw64\\bin"
         - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
@@ -5698,12 +5544,12 @@ events:
         - "C:\\Users\\Admin\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\Admin\\AppData\\Roaming\\npm"
         - "C:\\Users\\Admin\\AppData\\Local\\Programs\\Antigravity\\bin"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/StudentMS"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/QuanLyHoSoSinhVien"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
         - "C:/Program Files (x86)"
         - "C:/Program Files/CMake"
-        - "C:/Program Files (x86)/StudentMS"
+        - "C:/Program Files (x86)/QuanLyHoSoSinhVien"
   -
     kind: "find_package-v1"
     backtrace:
@@ -5785,8 +5631,6 @@ events:
       mode: "config"
       version: "6.5.3"
     search_context:
-      ENV{CMAKE_PREFIX_PATH}:
-        - "C:\\Qt\\6.5.0\\mingw_64"
       ENV{PATH}:
         - "C:\\msys64\\mingw64\\bin"
         - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
@@ -5815,12 +5659,12 @@ events:
         - "C:\\Users\\Admin\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\Admin\\AppData\\Roaming\\npm"
         - "C:\\Users\\Admin\\AppData\\Local\\Programs\\Antigravity\\bin"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/StudentMS"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/QuanLyHoSoSinhVien"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
         - "C:/Program Files (x86)"
         - "C:/Program Files/CMake"
-        - "C:/Program Files (x86)/StudentMS"
+        - "C:/Program Files (x86)/QuanLyHoSoSinhVien"
   -
     kind: "find_package-v1"
     backtrace:
@@ -6964,8 +6808,6 @@ events:
       mode: "config"
       version: "6.5.3"
     search_context:
-      ENV{CMAKE_PREFIX_PATH}:
-        - "C:\\Qt\\6.5.0\\mingw_64"
       ENV{PATH}:
         - "C:\\msys64\\mingw64\\bin"
         - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
@@ -6994,12 +6836,12 @@ events:
         - "C:\\Users\\Admin\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\Admin\\AppData\\Roaming\\npm"
         - "C:\\Users\\Admin\\AppData\\Local\\Programs\\Antigravity\\bin"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/StudentMS"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/QuanLyHoSoSinhVien"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
         - "C:/Program Files (x86)"
         - "C:/Program Files/CMake"
-        - "C:/Program Files (x86)/StudentMS"
+        - "C:/Program Files (x86)/QuanLyHoSoSinhVien"
       CMAKE_MODULE_PATH:
         - "C:/Qt/6.5.3/mingw_64/lib/cmake/Qt6"
         - "C:/Qt/6.5.3/mingw_64/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules"

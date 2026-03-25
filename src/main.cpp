@@ -3,6 +3,7 @@
 #include <QStyleFactory>
 #include <QPalette>
 #include <QColor>
+#include <QIcon>
 #include "mainwindow.h"
 #include "logindialog.h"
 #include "databasemanager.h"
@@ -15,6 +16,7 @@ int main(int argc, char *argv[]) {
     #endif
     
     QApplication app(argc, argv);
+    app.setWindowIcon(QIcon(":/pentagon_jar.png"));
     app.setApplicationName("StudentMS");
     app.setApplicationDisplayName("Quản Lý Sinh Viên");
     app.setOrganizationName("University");

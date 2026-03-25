@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.16)
-project(StudentMS VERSION 1.0.0 LANGUAGES CXX)
+project(QuanLyHoSoSinhVien VERSION 1.0.0 LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
@@ -49,26 +49,31 @@ set(UI_FILES
     ui/logindialog.ui
 )
 
-qt_add_executable(StudentMS
+set(RESOURCES
+    src/resources/resources.qrc
+)
+
+qt_add_executable(QuanLyHoSoSinhVien
     ${SOURCES}
     ${HEADERS}
     ${UI_FILES}
+    ${RESOURCES}
 )
 
-target_include_directories(StudentMS PRIVATE
+target_include_directories(QuanLyHoSoSinhVien PRIVATE
     src/models
     src/views
     src/controllers
     src/database
 )
 
-target_link_libraries(StudentMS PRIVATE
+target_link_libraries(QuanLyHoSoSinhVien PRIVATE
     Qt6::Widgets
     Qt6::Sql
 )
 
 # Đặt tên app và icon
-set_target_properties(StudentMS PROPERTIES
+set_target_properties(QuanLyHoSoSinhVien PROPERTIES
     WIN32_EXECUTABLE TRUE
     MACOSX_BUNDLE TRUE
 )
