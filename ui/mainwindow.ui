@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect><x>0</x><y>0</y><width>1200</width><height>760</height></rect>
+  </property>
+  <property name="windowTitle">
+   <string>Phần Mềm Quản Lý Hồ Sơ Sinh Viên</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing"><number>0</number></property>
+     <property name="leftMargin"><number>8</number></property>
+     <property name="topMargin"><number>8</number></property>
+     <property name="rightMargin"><number>8</number></property>
+     <property name="bottomMargin"><number>4</number></property>
+
+    <!-- ═══════════════════════════════════ HEADER BANNER ══ -->
+    <item>
+     <widget class="QLabel" name="lblHeader">
+      <property name="text">
+       <string>🎓  PHẦN MỀM QUẢN LÝ HỒ SƠ SINH VIÊN</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="styleSheet">
+       <string>
+        background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+            stop:0 #1e3a8a, stop:0.5 #1e40af, stop:1 #2563eb);
+        color: white;
+        font-size: 22px;
+        font-weight: bold;
+        padding: 16px;
+        border-radius: 10px;
+        margin-bottom: 6px;
+        letter-spacing: 1px;
+       </string>
+      </property>
+      <property name="minimumHeight">
+       <number>60</number>
+      </property>
+     </widget>
+    </item>
+
+    <!-- ═══════════════════════════════════ TAB WIDGET ══════ -->
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex"><number>0</number></property>
+      <property name="styleSheet">
+       <string>
+        QTabBar::tab {
+            padding: 10px 24px;
+            font-size: 13px;
+            font-weight: bold;
+            color: #64748b;
+            border: none;
+            background: transparent;
+        }
+        QTabBar::tab:selected {
+            color: #1e40af;
+            border-bottom: 3px solid #1e40af;
+        }
+        QTabBar::tab:hover:!selected { color: #334155; }
+        QTabWidget::pane {
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            background: white;
+            padding: 8px;
+        }
+       </string>
+      </property>
+
+      <!-- ───────────────────── TAB 1: SINH VIÊN ──────────── -->
+      <widget class="QWidget" name="tabStudents">
+       <attribute name="title"><string>  👨‍🎓  Sinh Viên  </string></attribute>
+       <layout class="QVBoxLayout" name="vlStudents">
+        <property name="spacing"><number>8</number></property>
+
+        <!-- Toolbar sinh viên -->
+        <item>
+         <layout class="QHBoxLayout" name="hlStudentToolbar">
+          <property name="spacing"><number>6</number></property>
+
+          <item>
+           <widget class="QPushButton" name="btnAddStudent">
+            <property name="text"><string>➕  Thêm Sinh Viên</string></property>
+            <property name="minimumHeight"><number>38</number></property>
+            <property name="styleSheet">
+             <string>
+              QPushButton { background:#16a34a; color:white; padding:8px 18px;
+                border-radius:7px; font-weight:bold; font-size:13px; border:none; }
+              QPushButton:hover { background:#15803d; }
+              QPushButton:pressed { background:#166534; }
+             </string>
+            </property>
+            <property name="toolTip"><string>Thêm sinh viên mới vào hệ thống</string></property>
+           </widget>
+          </item>
+
+          <item>
+           <widget class="QPushButton" name="btnEditStudent">
+            <property name="text"><string>✏️  Sửa</string></property>
+            <property name="minimumHeight"><number>38</number></property>
+            <property name="styleSheet">
+             <string>
+              QPushButton { background:#2563eb; color:white; padding:8px 18px;
+                border-radius:7px; font-weight:bold; font-size:13px; border:none; }
+              QPushButton:hover { background:#1d4ed8; }
+              QPushButton:pressed { background:#1e40af; }
+             </string>
+            </property>
+            <property name="toolTip"><string>Sửa thông tin sinh viên được chọn</string></property>
+           </widget>
+          </item>
+
+          <item>
+           <widget class="QPushButton" name="btnDeleteStudent">
+            <property name="text"><string>🗑️  Xóa</string></property>
+            <property name="minimumHeight"><number>38</number></property>
+            <property name="styleSheet">
+             <string>
+              QPushButton { background:#dc2626; color:white; padding:8px 18px;
+                border-radius:7px; font-weight:bold; font-size:13px; border:none; }
+              QPushButton:hover { background:#b91c1c; }
+              QPushButton:pressed { background:#991b1b; }
+             </string>
+            </property>
+            <property name="toolTip"><string>Xóa sinh viên được chọn</string></property>
+           </widget>
+          </item>
+
+          <item>
+           <widget class="QPushButton" name="btnExportCSV">
+            <property name="text"><string>📥  Xuất CSV</string></property>
+            <property name="minimumHeight"><number>38</number></property>
+            <property name="styleSheet">
+             <string>
+              QPushButton { background:#d97706; color:white; padding:8px 18px;
+                border-radius:7px; font-weight:bold; font-size:13px; border:none; }
+              QPushButton:hover { background:#b45309; }
+              QPushButton:pressed { background:#92400e; }
+             </string>
+            </property>
+            <property name="toolTip"><string>Xuất toàn bộ danh sách ra file CSV</string></property>
+           </widget>
+          </item>
+
+          <item>
+           <spacer>
+            <property name="orientation"><enum>Qt::Horizontal</enum></property>
+           </spacer>
+          </item>
+
+          <!-- Search box -->
+          <item>
+           <widget class="QLineEdit" name="lineSearch">
+            <property name="minimumHeight"><number>38</number></property>
+            <property name="minimumWidth"><number>280</number></property>
+            <property name="placeholderText">
+             <string>🔍  Tìm theo mã SV hoặc tên sinh viên...</string>
+            </property>
+            <property name="styleSheet">
+             <string>
+              QLineEdit {
+                padding: 8px 12px;
+                border: 2px solid #cbd5e1;
+                border-radius: 7px;
+                font-size: 13px;
+                background: white;
+              }
+              QLineEdit:focus { border-color: #3b82f6; }
+             </string>
+            </property>
+           </widget>
+          </item>
+
+          <item>
+           <widget class="QPushButton" name="btnSearch">
+            <property name="text"><string>Tìm</string></property>
+            <property name="minimumHeight"><number>38</number></property>
+            <property name="styleSheet">
+             <string>
+              QPushButton { background:#4f46e5; color:white; padding:8px 18px;
+                border-radius:7px; font-weight:bold; font-size:13px; border:none; }
+              QPushButton:hover { background:#4338ca; }
+             </string>
+            </property>
+           </widget>
+          </item>
+
+          <item>
+           <widget class="QPushButton" name="btnClearSearch">
+            <property name="text"><string>✖  Xóa lọc</string></property>
+            <property name="minimumHeight"><number>38</number></property>
+            <property name="styleSheet">
+             <string>
+              QPushButton { background:#94a3b8; color:white; padding:8px 14px;
+                border-radius:7px; font-size:13px; border:none; }
+              QPushButton:hover { background:#64748b; }
+             </string>
+            </property>
+           </widget>
+          </item>
+
+         </layout>
+        </item>
+
+        <!-- Bảng sinh viên -->
+        <item>
+         <widget class="QTableWidget" name="tableStudents">
+          <property name="alternatingRowColors"><bool>true</bool></property>
+          <property name="selectionBehavior">
+           <enum>QAbstractItemView::SelectRows</enum>
+          </property>
+          <property name="editTriggers">
+           <set>QAbstractItemView::NoEditTriggers</set>
+          </property>
+          <property name="sortingEnabled"><bool>true</bool></property>
+         </widget>
+        </item>
+
+        <!-- Footer đếm -->
+        <item>
+         <widget class="QLabel" name="lblStudentCount">
+          <property name="text"><string>Tổng: 0 sinh viên</string></property>
+          <property name="styleSheet">
+           <string>color:#64748b; font-size:12px; padding:2px 4px;</string>
+          </property>
+         </widget>
+        </item>
+
+       </layout>
+      </widget>
+
+      <!-- ───────────────────── TAB 2: LỚP HỌC ───────────── -->
+      <widget class="QWidget" name="tabClasses">
+       <attribute name="title"><string>  📚  Lớp Học  </string></attribute>
+       <layout class="QVBoxLayout" name="vlClasses">
+        <property name="spacing"><number>8</number></property>
+
+        <item>
+         <layout class="QHBoxLayout" name="hlClassToolbar">
+          <property name="spacing"><number>6</number></property>
+
+          <item>
+           <widget class="QPushButton" name="btnAddClass">
+            <property name="text"><string>➕  Thêm Lớp</string></property>
+            <property name="minimumHeight"><number>38</number></property>
+            <property name="styleSheet">
+             <string>
+              QPushButton { background:#16a34a; color:white; padding:8px 18px;
+                border-radius:7px; font-weight:bold; font-size:13px; border:none; }
+              QPushButton:hover { background:#15803d; }
+             </string>
+            </property>
+           </widget>
+          </item>
+
+          <item>
+           <widget class="QPushButton" name="btnEditClass">
+            <property name="text"><string>✏️  Sửa</string></property>
+            <property name="minimumHeight"><number>38</number></property>
+            <property name="styleSheet">
+             <string>
+              QPushButton { background:#2563eb; color:white; padding:8px 18px;
+                border-radius:7px; font-weight:bold; font-size:13px; border:none; }
+              QPushButton:hover { background:#1d4ed8; }
+             </string>
+            </property>
+           </widget>
+          </item>
+
+          <item>
+           <widget class="QPushButton" name="btnDeleteClass">
+            <property name="text"><string>🗑️  Xóa</string></property>
+            <property name="minimumHeight"><number>38</number></property>
+            <property name="styleSheet">
+             <string>
+              QPushButton { background:#dc2626; color:white; padding:8px 18px;
+                border-radius:7px; font-weight:bold; font-size:13px; border:none; }
+              QPushButton:hover { background:#b91c1c; }
+             </string>
+            </property>
+           </widget>
+          </item>
+
+          <item>
+           <spacer>
+            <property name="orientation"><enum>Qt::Horizontal</enum></property>
+           </spacer>
+          </item>
+
+         </layout>
+        </item>
+
+        <item>
+         <widget class="QTableWidget" name="tableClasses">
+          <property name="alternatingRowColors"><bool>true</bool></property>
+          <property name="selectionBehavior">
+           <enum>QAbstractItemView::SelectRows</enum>
+          </property>
+          <property name="editTriggers">
+           <set>QAbstractItemView::NoEditTriggers</set>
+          </property>
+         </widget>
+        </item>
+
+       </layout>
+      </widget>
+
+      <!-- ───────────────────── TAB 3: KHOA ──────────────── -->
+      <widget class="QWidget" name="tabDepts">
+       <attribute name="title"><string>  🏫  Khoa  </string></attribute>
+       <layout class="QVBoxLayout" name="vlDepts">
+        <property name="spacing"><number>8</number></property>
+
+        <item>
+         <layout class="QHBoxLayout" name="hlDeptToolbar">
+          <property name="spacing"><number>6</number></property>
+
+          <item>
+           <widget class="QPushButton" name="btnAddDept">
+            <property name="text"><string>➕  Thêm Khoa</string></property>
+            <property name="minimumHeight"><number>38</number></property>
+            <property name="styleSheet">
+             <string>
+              QPushButton { background:#16a34a; color:white; padding:8px 18px;
+                border-radius:7px; font-weight:bold; font-size:13px; border:none; }
+              QPushButton:hover { background:#15803d; }
+             </string>
+            </property>
+           </widget>
+          </item>
+
+          <item>
+           <widget class="QPushButton" name="btnEditDept">
+            <property name="text"><string>✏️  Sửa</string></property>
+            <property name="minimumHeight"><number>38</number></property>
+            <property name="styleSheet">
+             <string>
+              QPushButton { background:#2563eb; color:white; padding:8px 18px;
+                border-radius:7px; font-weight:bold; font-size:13px; border:none; }
+              QPushButton:hover { background:#1d4ed8; }
+             </string>
+            </property>
+           </widget>
+          </item>
+
+          <item>
+           <widget class="QPushButton" name="btnDeleteDept">
+            <property name="text"><string>🗑️  Xóa</string></property>
+            <property name="minimumHeight"><number>38</number></property>
+            <property name="styleSheet">
+             <string>
+              QPushButton { background:#dc2626; color:white; padding:8px 18px;
+                border-radius:7px; font-weight:bold; font-size:13px; border:none; }
+              QPushButton:hover { background:#b91c1c; }
+             </string>
+            </property>
+           </widget>
+          </item>
+
+          <item>
+           <spacer>
+            <property name="orientation"><enum>Qt::Horizontal</enum></property>
+           </spacer>
+          </item>
+
+         </layout>
+        </item>
+
+        <item>
+         <widget class="QTableWidget" name="tableDepts">
+          <property name="alternatingRowColors"><bool>true</bool></property>
+          <property name="selectionBehavior">
+           <enum>QAbstractItemView::SelectRows</enum>
+          </property>
+          <property name="editTriggers">
+           <set>QAbstractItemView::NoEditTriggers</set>
+          </property>
+         </widget>
+        </item>
+
+       </layout>
+      </widget>
+
+     </widget><!-- end tabWidget -->
+    </item><!-- end tab item -->
+
+   </layout>
+  </widget><!-- end centralwidget -->
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+</ui>

@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>LoginDialog</class>
+ <widget class="QDialog" name="LoginDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>420</width>
+    <height>489</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Đăng Nhập Hệ Thống</string>
+  </property>
+  <property name="styleSheet">
+   <string>
+    QDialog { background: qlineargradient(x1:0,y1:0,x2:0,y2:1,
+        stop:0 #eff6ff, stop:1 #dbeafe); }
+    QLineEdit {
+        border: 1.5px solid #93c5fd;
+        border-radius: 8px;
+        padding: 10px 14px;
+        font-size: 14px;
+        background: white;
+    }
+    QLineEdit:focus { border-color: #2563eb; }
+   </string>
+  </property>
+  <layout class="QVBoxLayout" name="mainLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QLabel" name="lblLogo">
+     <property name="styleSheet">
+      <string>font-size:52px; padding:20px 0 8px 0; background:transparent;</string>
+     </property>
+     <property name="text">
+      <string>🎓</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="lblAppName">
+     <property name="styleSheet">
+      <string notr="true">
+       font-size: 20px;
+       font-weight: bold;
+       color: #1e3a8a;
+       letter-spacing: 1px;
+       padding-bottom: 4px;
+       background: transparent;
+      </string>
+     </property>
+     <property name="text">
+      <string>QUẢN LÝ HỒ SƠ SINH VIÊN</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="lblSubtitle">
+     <property name="styleSheet">
+      <string notr="true">color:#64748b; font-size:12px; padding-bottom:16px; background:transparent;</string>
+     </property>
+     <property name="text">
+      <string>Vui lòng đăng nhập để tiếp tục</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QVBoxLayout" name="cardLayout">
+     <property name="spacing">
+      <number>12</number>
+     </property>
+     <property name="leftMargin">
+      <number>24</number>
+     </property>
+     <property name="topMargin">
+      <number>20</number>
+     </property>
+     <property name="rightMargin">
+      <number>24</number>
+     </property>
+     <property name="bottomMargin">
+      <number>20</number>
+     </property>
+     <item>
+      <widget class="QLabel" name="label_user">
+       <property name="styleSheet">
+        <string>font-weight:bold; color:#374151; font-size:13px; background:transparent;</string>
+       </property>
+       <property name="text">
+        <string>Tên đăng nhập</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineUsername">
+       <property name="placeholderText">
+        <string>Nhập tên đăng nhập...</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_pass">
+       <property name="styleSheet">
+        <string>font-weight:bold; color:#374151; font-size:13px; background:transparent;</string>
+       </property>
+       <property name="text">
+        <string>Mật khẩu</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QHBoxLayout">
+       <property name="spacing">
+        <number>6</number>
+       </property>
+       <item>
+        <widget class="QLineEdit" name="linePassword">
+         <property name="echoMode">
+          <enum>QLineEdit::Password</enum>
+         </property>
+         <property name="placeholderText">
+          <string>Nhập mật khẩu...</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btnShowPass">
+         <property name="minimumSize">
+          <size>
+           <width>42</width>
+           <height>42</height>
+          </size>
+         </property>
+         <property name="toolTip">
+          <string>Hiển thị/ẩn mật khẩu</string>
+         </property>
+         <property name="styleSheet">
+          <string>
+            QPushButton { background:#f1f5f9; border:1.5px solid #cbd5e1;
+              border-radius:8px; font-size:16px; }
+            QPushButton:hover { background:#e2e8f0; }
+           </string>
+         </property>
+         <property name="text">
+          <string>👁</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QLabel" name="lblError">
+       <property name="styleSheet">
+        <string>
+          color: #dc2626;
+          background: #fef2f2;
+          border: 1px solid #fecaca;
+          border-radius: 6px;
+          padding: 8px 10px;
+          font-size: 12px;
+         </string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="hlButtons">
+     <property name="spacing">
+      <number>10</number>
+     </property>
+     <property name="leftMargin">
+      <number>24</number>
+     </property>
+     <property name="topMargin">
+      <number>16</number>
+     </property>
+     <property name="rightMargin">
+      <number>24</number>
+     </property>
+     <property name="bottomMargin">
+      <number>16</number>
+     </property>
+     <item>
+      <widget class="QPushButton" name="btnLogin">
+       <property name="styleSheet">
+        <string notr="true">
+         QPushButton { background:#1e40af; color:white; padding:10px;
+           border-radius:9px; font-weight:bold; font-size:13px; border:none; }
+         QPushButton:hover { background:#1d4ed8; }
+         QPushButton:pressed { background:#1e3a8a; }
+        </string>
+       </property>
+       <property name="text">
+        <string>Đăng Nhập</string>
+       </property>
+       <property name="default">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnCancel">
+       <property name="styleSheet">
+        <string notr="true">
+         QPushButton { background:#94a3b8; color:white; padding:10px;
+           border-radius:9px ;font-weight:bold; font-size:13px; border:none; }
+         QPushButton:hover { background:#64748b; }</string>
+       </property>
+       <property name="text">
+        <string>Thoát</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QLabel" name="lblDefaultHint">
+     <property name="styleSheet">
+      <string>color:#94a3b8; font-size:11px; padding-bottom:8px; background:transparent;</string>
+     </property>
+     <property name="text">
+      <string>Tài khoản mặc định: admin / admin123</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
