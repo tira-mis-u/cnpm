@@ -20,7 +20,7 @@
     <item>
      <widget class="QLabel" name="lblHeader">
       <property name="text">
-       <string>🎓  PHẦN MỀM QUẢN LÝ HỒ SƠ SINH VIÊN</string>
+       <string>PHẦN MỀM QUẢN LÝ HỒ SƠ SINH VIÊN</string>
       </property>
       <property name="alignment">
        <set>Qt::AlignCenter</set>
@@ -74,7 +74,7 @@
 
       <!-- ───────────────────── TAB 1: SINH VIÊN ──────────── -->
       <widget class="QWidget" name="tabStudents">
-       <attribute name="title"><string>  👨‍🎓  Sinh Viên  </string></attribute>
+       <attribute name="title"><string>  Sinh Viên  </string></attribute>
        <layout class="QVBoxLayout" name="vlStudents">
         <property name="spacing"><number>8</number></property>
 
@@ -85,7 +85,7 @@
 
           <item>
            <widget class="QPushButton" name="btnAddStudent">
-            <property name="text"><string>➕  Thêm Sinh Viên</string></property>
+            <property name="text"><string>Thêm Sinh Viên</string></property>
             <property name="minimumHeight"><number>38</number></property>
             <property name="styleSheet">
              <string>
@@ -101,7 +101,7 @@
 
           <item>
            <widget class="QPushButton" name="btnEditStudent">
-            <property name="text"><string>✏️  Sửa</string></property>
+            <property name="text"><string>Sửa</string></property>
             <property name="minimumHeight"><number>38</number></property>
             <property name="styleSheet">
              <string>
@@ -117,7 +117,7 @@
 
           <item>
            <widget class="QPushButton" name="btnDeleteStudent">
-            <property name="text"><string>🗑️  Xóa</string></property>
+            <property name="text"><string>Xóa</string></property>
             <property name="minimumHeight"><number>38</number></property>
             <property name="styleSheet">
              <string>
@@ -133,7 +133,7 @@
 
           <item>
            <widget class="QPushButton" name="btnExportCSV">
-            <property name="text"><string>📥  Xuất CSV</string></property>
+            <property name="text"><string>Xuất CSV</string></property>
             <property name="minimumHeight"><number>38</number></property>
             <property name="styleSheet">
              <string>
@@ -159,7 +159,7 @@
             <property name="minimumHeight"><number>38</number></property>
             <property name="minimumWidth"><number>280</number></property>
             <property name="placeholderText">
-             <string>🔍  Tìm theo mã SV hoặc tên sinh viên...</string>
+             <string>Tìm theo mã SV hoặc tên sinh viên...</string>
             </property>
             <property name="styleSheet">
              <string>
@@ -192,7 +192,7 @@
 
           <item>
            <widget class="QPushButton" name="btnClearSearch">
-            <property name="text"><string>✖  Xóa lọc</string></property>
+            <property name="text"><string>Xóa lọc</string></property>
             <property name="minimumHeight"><number>38</number></property>
             <property name="styleSheet">
              <string>
@@ -236,7 +236,7 @@
 
       <!-- ───────────────────── TAB 2: LỚP HỌC ───────────── -->
       <widget class="QWidget" name="tabClasses">
-       <attribute name="title"><string>  📚  Lớp Học  </string></attribute>
+       <attribute name="title"><string>  Lớp Học  </string></attribute>
        <layout class="QVBoxLayout" name="vlClasses">
         <property name="spacing"><number>8</number></property>
 
@@ -246,7 +246,7 @@
 
           <item>
            <widget class="QPushButton" name="btnAddClass">
-            <property name="text"><string>➕  Thêm Lớp</string></property>
+            <property name="text"><string>Thêm Lớp</string></property>
             <property name="minimumHeight"><number>38</number></property>
             <property name="styleSheet">
              <string>
@@ -260,7 +260,7 @@
 
           <item>
            <widget class="QPushButton" name="btnEditClass">
-            <property name="text"><string>✏️  Sửa</string></property>
+            <property name="text"><string>Sửa</string></property>
             <property name="minimumHeight"><number>38</number></property>
             <property name="styleSheet">
              <string>
@@ -274,7 +274,7 @@
 
           <item>
            <widget class="QPushButton" name="btnDeleteClass">
-            <property name="text"><string>🗑️  Xóa</string></property>
+            <property name="text"><string>Xóa</string></property>
             <property name="minimumHeight"><number>38</number></property>
             <property name="styleSheet">
              <string>
@@ -312,7 +312,7 @@
 
       <!-- ───────────────────── TAB 3: KHOA ──────────────── -->
       <widget class="QWidget" name="tabDepts">
-       <attribute name="title"><string>  🏫  Khoa  </string></attribute>
+       <attribute name="title"><string>  Khoa  </string></attribute>
        <layout class="QVBoxLayout" name="vlDepts">
         <property name="spacing"><number>8</number></property>
 
@@ -322,7 +322,7 @@
 
           <item>
            <widget class="QPushButton" name="btnAddDept">
-            <property name="text"><string>➕  Thêm Khoa</string></property>
+            <property name="text"><string>Thêm Khoa</string></property>
             <property name="minimumHeight"><number>38</number></property>
             <property name="styleSheet">
              <string>
@@ -336,7 +336,7 @@
 
           <item>
            <widget class="QPushButton" name="btnEditDept">
-            <property name="text"><string>✏️  Sửa</string></property>
+            <property name="text"><string>Sửa</string></property>
             <property name="minimumHeight"><number>38</number></property>
             <property name="styleSheet">
              <string>
@@ -350,7 +350,7 @@
 
           <item>
            <widget class="QPushButton" name="btnDeleteDept">
-            <property name="text"><string>🗑️  Xóa</string></property>
+            <property name="text"><string>Xóa</string></property>
             <property name="minimumHeight"><number>38</number></property>
             <property name="styleSheet">
              <string>

@@ -8,7 +8,7 @@ DepartmentDialog::DepartmentDialog(QWidget* parent, const Department* dept)
     , m_dept(dept)
 {
     ui->setupUi(this);
-    setWindowTitle(dept ? "✏️  Sửa Thông Tin Khoa" : "➕  Thêm Khoa Mới");
+    setWindowTitle(dept ? "Sửa Thông Tin Khoa" : "Thêm Khoa Mới");
     setWindowFlags(windowFlags() & ~Qt::WindowContextHelpButtonHint);
 
 

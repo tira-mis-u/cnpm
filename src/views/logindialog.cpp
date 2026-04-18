@@ -41,7 +41,7 @@ void LoginDialog::onLogin() {
     QString pass = ui->linePassword->text();
 
     if (user.isEmpty() || pass.isEmpty()) {
-        ui->lblError->setText("⚠ Vui lòng nhập đầy đủ thông tin.");
+        ui->lblError->setText("Vui lòng nhập đầy đủ thông tin.");
         ui->lblError->show();
         return;
     }
@@ -60,7 +60,7 @@ void LoginDialog::onLogin() {
         }
 
         ui->lblError->setText(
-            QString("✖ Sai tên đăng nhập hoặc mật khẩu! (còn %1 lần thử)").arg(remaining));
+            QString("Sai tên đăng nhập hoặc mật khẩu! (còn %1 lần thử)").arg(remaining));
         ui->lblError->show();
         ui->linePassword->clear();
         ui->linePassword->setFocus();
@@ -70,5 +70,5 @@ void LoginDialog::onLogin() {
 void LoginDialog::onTogglePassword() {
     m_showPass = !m_showPass;
     ui->linePassword->setEchoMode(m_showPass ? QLineEdit::Normal : QLineEdit::Password);
-    ui->btnShowPass->setText(m_showPass ? "🙈" : "👁");
+    ui->btnShowPass->setText(m_showPass ? "Ẩn" : "Hiện");
 }

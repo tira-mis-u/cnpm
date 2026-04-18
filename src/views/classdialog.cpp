@@ -12,7 +12,7 @@ ClassDialog::ClassDialog(QWidget* parent,
     , m_deptCtrl(deptCtrl)
 {
     ui->setupUi(this);
-    setWindowTitle(cls ? "✏️  Sửa Lớp Học" : "➕  Thêm Lớp Học");
+    setWindowTitle(cls ? "Sửa Lớp Học" : "Thêm Lớp Học");
     setWindowFlags(windowFlags() & ~Qt::WindowContextHelpButtonHint);
     
     ui->comboDept->setItemDelegate(new QStyledItemDelegate(this));

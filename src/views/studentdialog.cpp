@@ -13,7 +13,7 @@ StudentDialog::StudentDialog(QWidget* parent,
     , m_isEditMode(student != nullptr)
 {
     ui->setupUi(this);
-    setWindowTitle(m_isEditMode ? "✏️  Sửa Thông Tin Sinh Viên" : "➕  Thêm Sinh Viên Mới");
+    setWindowTitle(m_isEditMode ? "Sửa Thông Tin Sinh Viên" : "Thêm Sinh Viên Mới");
     setWindowFlags(windowFlags() & ~Qt::WindowContextHelpButtonHint);
 
     ui->comboGender->setItemDelegate(new QStyledItemDelegate(this));
