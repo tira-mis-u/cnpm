@@ -16,7 +16,7 @@ Mục tiêu: Đảm bảo hệ thống hoạt động chính xác, ổn định,
 
 | Testcase ID | Mục đích | Các bước thực hiện | Kết quả dự kiến | Kết quả nhận được |
 | :--- | :--- | :--- | :--- | :--- |
-| **TC_AUTH_01** | Kiểm tra đăng nhập thành công | 1. Nhập đúng tài khoản `admin`<br>2. Nhập đúng mật khẩu `123456`<br>3. Bấm Đăng nhập | Hiển thị màn hình quản lý chính. | Passed |
+| **TC_AUTH_01** | Kiểm tra đăng nhập thành công | 1. Nhập đúng tài khoản `admin`<br>2. Nhập đúng mật khẩu `admin123`<br>3. Bấm Đăng nhập | Hiển thị màn hình quản lý chính. | Passed |
 | **TC_AUTH_02** | Bắt lỗi bỏ trống trường dữ liệu | 1. Để trống tài khoản hoặc mật khẩu<br>2. Bấm Đăng nhập | Hệ thống hiển thị thông báo yêu cầu điền đầy đủ. | Passed |
 | **TC_AUTH_03** | Bắt lỗi nhập sai tài khoản/mật khẩu | 1. Nhập sai thông tin<br>2. Bấm Đăng nhập | Hiển thị thông báo "Tài khoản hoặc mật khẩu không hợp lệ". | Passed |
 | **TC_AUTH_04** | Kiểm thử Brute Force / Nhập sai nhiều lần | 1. Sử dụng script nhập sai mật khẩu liên tục 50 lần | Hệ thống không bị crash, vẫn giữ popup cảnh báo và cản truy cập. | Passed |
